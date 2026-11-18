@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c121b">
+  <meta name="description" content="The visual and story continuity studio for Digital Utopia Serenity.">
+  <title>Continuity Studio — Digital Utopia Serenity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="Continuity Studio home"><span class="brand-mark">✦</span><span><b>DUS</b><small>CONTINUITY STUDIO</small></span></a>
+      <div class="workspace-label">WORKSPACE <span class="live-dot"></span></div>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="home"><span>◫</span> Overview</button>
+        <button class="nav-item" data-page="characters"><span>◉</span> Characters <em id="character-count">0</em></button>
+        <button class="nav-item" data-page="scenes"><span>▧</span> Scene library <em id="scene-count">0</em></button>
+        <button class="nav-item" data-page="compare"><span>▤</span> Compare desk</button>
+        <button class="nav-item" data-page="places"><span>⌖</span> Places <em id="place-count">0</em></button>
+        <button class="nav-item" data-page="sessions"><span>↻</span> Session log</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="canon-key"><span class="key-dot confirmed"></span> Confirmed canon <span class="key-dot tentative"></span> Tentative</div>
+        <button class="nav-item" data-page="sources"><span>⌘</span> Source shelf</button>
+        <div class="sidebar-foot"><span>Digital Utopia Serenity</span><span>Continuity is a love language.</span></div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div class="crumb"><span>Digital Utopia Serenity</span><b>/</b><strong id="page-crumb">Overview</strong></div>
+        <div class="top-actions"><label class="searchbox"><span>⌕</span><input id="global-search" placeholder="Find a character, place, scene…" autocomplete="off"><kbd>⌘ K</kbd></label><button class="icon-button" id="export-button" title="Export workspace" aria-label="Export workspace">⇩</button><button class="avatar" title="Continuity keeper">M</button></div>
+      </header>
+      <section class="page" id="page-root" tabindex="-1"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <input type="file" id="import-file" accept="application/json" hidden>
+  <script src="app.js"></script>
+</body>
+</html>

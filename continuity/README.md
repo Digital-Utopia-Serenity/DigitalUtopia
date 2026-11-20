@@ -4,11 +4,11 @@ A shared workspace for maintaining reusable character, scene, place, comparison,
 
 ## Start here
 
-1. Open the [Council workspace](https://digitalutopiaserenity.net/continuity/) or the app in your browser.
-2. Download `workspace.json` from this folder and import it before a new pass.
-3. Browse the Reference library, then add or update only a genuinely distinct reference.
-4. Keep unsettled details marked **Tentative**. Set conflicting details to **Needs review** instead of silently changing canon.
-5. Compare image or prompt versions. Link the comparison to its character or scene, then log the decision in Production log.
+1. Open the [Council continuity folder](https://github.com/Digital-Utopia-Serenity/DigitalUtopia/tree/main/continuity).
+2. Read this guide, then download `workspace.json` and import it into the app before editing.
+3. Browse the Reference library. Update the existing concept when it matches; add a new entry only when it is genuinely distinct.
+4. Keep unsettled details **Tentative**. Set conflicting details to **Needs review** instead of silently changing canon.
+5. Compare image or prompt versions. Link each comparison to its character or scene, then record the decision in Production log.
 6. Export the workspace JSON, inspect the diff, and submit the update as a GitHub pull request or commit.
 7. Import the accepted JSON before the next pass so the Council starts from the same version.
 
